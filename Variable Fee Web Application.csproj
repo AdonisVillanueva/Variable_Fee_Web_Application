@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9ABBF31D-6295-4138-AB0B-FBE075A8BEDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Variable_Fee_Web_Application</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewSham\app_code\vssver2.scc" />
+    <None Include="NewSham\UploadedFiles\7-30-08 to 8-5-08.doc" />
+    <None Include="NewSham\UploadedFiles\desktop.ini" />
+    <None Include="NewSham\UploadedFiles\Document1.doc" />
+    <None Include="NewSham\UploadedFiles\IHISI_logo.eps" />
+    <None Include="NewSham\UploadedFiles\Job Postings ESO.xls" />
+    <None Include="NewSham\UploadedFiles\TimeWorked.xls" />
+    <None Include="NewSham\Web.Config" />
+    <None Include="NVFRCommon\app.config" />
+    <None Include="NVFRCommon\NVFR_DS.xsc">
+      <DependentUpon>NVFR_DS.xsd</DependentUpon>
+    </None>
+    <None Include="NVFRCommon\NVFR_DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NVFR_DS1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NVFRCommon\NVFR_DS.xss">
+      <DependentUpon>NVFR_DS.xsd</DependentUpon>
+    </None>
+    <None Include="NVFRCommon\Properties\Settings.settings" />
+    <None Include="Variable Fee Reporting Website.doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\image005.jpg" />
+    <Content Include="Images\image006.jpg" />
+    <Content Include="Images\image007.jpg" />
+    <Content Include="Images\image008.jpg" />
+    <Content Include="Images\NCG logo.jpg" />
+    <Content Include="NewSham\App_Data\ASPNETDB.MDF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NewSham\App_Data\aspnetdb_log.ldf">
+      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NewSham\ChangePassword.aspx" />
+    <Content Include="NewSham\FileUpload.aspx" />
+    <Content Include="NewSham\images\loginbutton.jpg" />
+    <Content Include="NewSham\images\NCG logo.jpg" />
+    <Content Include="NewSham\images\NCG-logo_sm.jpg" />
+    <Content Include="NewSham\Login.aspx" />
+    <Content Include="NewSham\PasswordRecovery.aspx" />
+    <Content Include="NewSham\Stored Procedures\Procs.sql" />
+    <Content Include="NewSham\Stored Procedures\UserSelect.sql" />
+    <Content Include="NewSham\Stored Procedures\Working Srcipts.sql" />
+    <Content Include="NewSham\StyleSheet.css" />
+    <Content Include="NewSham\UploadedFiles\148709932.png" />
+    <Content Include="NewSham\UploadedFiles\CrystalLicense.txt" />
+    <Content Include="NewSham\UploadedFiles\edit.gif" />
+    <Content Include="NewSham\UploadedFiles\spanned.txt" />
+    <Content Include="NewSham\UploadedFiles\_MG_0147.jpg" />
+    <Content Include="NewSham\VariableFee.aspx" />
+    <Content Include="NVFRCommon\NVFRCommon.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NewSham\app_code\DbAccess.cs" />
+    <Compile Include="NewSham\app_code\PasswordUtils.cs" />
+    <Compile Include="NewSham\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewSham\FileUpload.aspx.cs">
+      <DependentUpon>FileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewSham\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewSham\PasswordRecovery.aspx.cs">
+      <DependentUpon>PasswordRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewSham\VariableFee.aspx.cs">
+      <DependentUpon>VariableFee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NVFRCommon\MAS.cs" />
+    <Compile Include="NVFRCommon\NVFR_DS.cs">
+      <DependentUpon>NVFR_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NVFRCommon\NVFR_DS.Designer.cs">
+      <DependentUpon>NVFR_DS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NVFRCommon\NVFR_DS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NVFR_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NVFRCommon\PasswordUtils.cs" />
+    <Compile Include="NVFRCommon\Properties\AssemblyInfo.cs" />
+    <Compile Include="NVFRCommon\Properties\Settings.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NVFRDB\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
